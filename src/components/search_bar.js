@@ -3,17 +3,21 @@ import React, { Component } from 'react';
 
 class SearchBar extends Component {
 
+  // state only exists in the class based component.
   constructor(props) {
     super(props);
+    // calling the parent method
 
     this.state = {term: ''};
   }
 
   render() {
+    // this.state.term = event.target.value >> this is really BAD. Only use. setState();
     return (
       <div>
-        <input onChange={event => this.setState({ term: event.target.value  })} />
-        Value of the input: {this.state.term}
+        <input
+          value={this.state.term}
+          onChange={event => this.setState({ term: event.target.value  })} />
       </div>
     );
     // on+eventName={this.eventHandler}
