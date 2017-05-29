@@ -1,4 +1,4 @@
-# Youtube Listing with AJAX
+# Youtube Video Listing with AJAX
 
 This project was done with Stephen Grider's starter project provided from his course, [Modern React with Redux](https://udemy.com/react-redux).
 
